@@ -1,0 +1,6 @@
+server.port=8091
+spring.application.name=limits-service
+#spring.cloud.config.label=master
+spring.profiles.active=development
+spring.cloud.config.server.git.default-label=master
+spring.config.import=http://localhost:8888

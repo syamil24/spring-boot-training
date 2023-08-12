@@ -1,0 +1,110 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <context-param>
+    <param-name>backgroundColor</param-name>
+    <param-value>grey</param-value>
+  </context-param>
+
+  <servlet>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <servlet-class>project.WelcomeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <url-pattern>/WelcomeServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>GenericWelcomeServlet</servlet-name>
+    <servlet-class>project.GenericWelcomeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>GenericWelcomeServlet</servlet-name>
+    <url-pattern>/GenericServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>GenericServletExample</servlet-name>
+    <servlet-class>project.GenericServletExample</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>GenericServletExample</servlet-name>
+    <url-pattern>/gsc</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>HttpServletExample</servlet-name>
+    <servlet-class>project.HttpServletExample</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>HttpServletExample</servlet-name>
+    <url-pattern>/hse</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RequestPrintServlet</servlet-name>
+    <servlet-class>project.RequestPrintServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RequestPrintServlet</servlet-name>
+    <url-pattern>/rps</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>GreetingServlet</servlet-name>
+    <servlet-class>project.GreetingServlet</servlet-class>
+    <init-param>
+      <param-name>defaultName</param-name>
+      <param-value>TestName</param-value>
+    </init-param>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>GreetingServlet</servlet-name>
+    <url-pattern>/gs</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>TestInitParams</servlet-name>
+    <servlet-class>project.TestInitParams</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>TestInitParams</servlet-name>
+    <url-pattern>/test</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LoadOnStartupExample</servlet-name>
+    <servlet-class>project.LoadOnStartupExample</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoadOnStartupExample</servlet-name>
+    <url-pattern>/load</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>VisitorsCountServlet</servlet-name>
+    <servlet-class>project.VisitorsCountServlet</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>VisitorsCountServlet</servlet-name>
+    <url-pattern>/count</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>

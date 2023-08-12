@@ -1,0 +1,5 @@
+server.port=8091
+spring.application.name=limits-service
+#spring.cloud.config.label=master
+spring.cloud.config.server.git.default-label=master
+spring.cloud.config.uri=http://localhost:8888
